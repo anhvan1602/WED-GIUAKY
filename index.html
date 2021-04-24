@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=360, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+	 <!--========== HEADER ==========-->
+	 <header class="l-header" id="header">
+
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="/" class="nav__link active-link">Home</a></li>
+					<li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+					<li class="nav__item"><a href="#1" class="nav__link">Contact</a></li>
+					<li class="bieu__tuong">
+						<h1>
+							drink <img src="./img/products/icon.png" alt="icon" class="icon">
+						</h1>
+						
+					</li>
+					
+
+				</ul>
+			</div>
+
+	</header>
+	<!-------------FIND----------------->
+	<form>
+		<h3>Bạn muốn tìm gì?</h3>
+        <fieldset style="width: 240px;">
+			<legend>Search the page</legend>
+			<input type="text" class="searchword"><button id="performSearch">search</button>
+		  </fieldset>
+		  
+</form>
+
+
+	
+
+	<main class="main-container">
+
+<!---------------------HOME---------------------->
+
+		<section class="section">
+			<h2 class="text-center">Products</h2>
+			<div class="products">
+				<!--
+					https://www.iconfinder.com/iconsets/beverage
+					Creative Commons (Attribution 3.0 Unported)
+					https://creativemarket.com/eucalyp
+				-->
+				<div class="product">
+					<img class="product__image" src="img/products/beer.svg" alt="Beer">
+					<h2 class="product__name">Beer</h2>
+					<h3 class="product__price">6.00</h3>
+					<button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+				</div>
+				<div class="product">
+					<img class="product__image" src="img/products/energy-drink.svg" alt="Energy Drink">
+					<h2 class="product__name">Energy Drink</h2>
+					<h3 class="product__price">5.00</h3>
+					<button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+				</div>
+				<div class="product">
+					<img class="product__image" src="img/products/juice.svg" alt="Juice">
+					<h2 class="product__name">Juice</h2>
+					<h3 class="product__price">4.00</h3>
+					<button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+				</div>
+				<div class="product">
+					<img class="product__image" src="img/products/milk.svg" alt="Milk">
+					<h2 class="product__name">Milk</h2>
+					<h3 class="product__price">2.50</h3>
+					<button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+				</div>
+				<div class="product">
+					<img class="product__image" src="img/products/mineral-water.svg" alt="Mineral Water">
+					<h2 class="product__name">Mineral Water</h2>
+					<h3 class="product__price">1.00</h3>
+					<button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+				</div>
+				<div class="product">
+					<img class="product__image" src="img/products/smoothie.svg" alt="Smoothie">
+					<h2 class="product__name">Smoothie</h2>
+					<h3 class="product__price">6.00</h3>
+					<button class="btn btn--primary" data-action="ADD_TO_CART">Add To Cart</button>
+				</div>
+			</div>
+
+            <div class="slideshow">
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+			</div>
+
+		</section>
+
+		<section class="section">
+			<h2 class="text-center">Cart</h2>
+			<div class="cart"></div>
+		</section>
+
+		<!------------------------MENU---------------------------->
+
+		<section>
+			<div>
+				<h2 class="section-subtitle">MENU</h2>
+				<img class="menu__img" src="img/products/menu.svg" alt="Menu">
+				<h3>Thức uống đa dạng được thêm mới mỗi ngày</h3>
+			</div>
+		</section>
+		
+		<section class="menu" id="menu">
+
+			<div class="product1">
+				<img class="product1__image" src="img/products/beer.svg" alt="Beer">
+				<h2 class="product1__name">Beer</h2>
+				<h3 class="product1__price">6.00</h3>
+			</div>
+			<div class="product1">
+				<img class="product1__image" src="img/products/energy-drink.svg" alt="Energy Drink">
+				<h2 class="product1__name">Energy Drink</h2>
+				<h3 class="product1__price">5.00</h3>
+			</div>
+			<div class="product1">
+				<img class="product1__image" src="img/products/juice.svg" alt="Juice">
+				<h2 class="product1__name">Juice</h2>
+				<h3 class="product1__price">4.00</h3>
+			</div>
+			<div class="product1">
+				<img class="product1__image" src="img/products/milk.svg" alt="Milk">
+				<h2 class="product1__name">Milk</h2>
+				<h3 class="product1__price">2.50</h3>
+			</div>
+			<div class="product1">
+				<img class="product1__image" src="img/products/mineral-water.svg" alt="Mineral Water">
+				<h2 class="product1__name">Mineral Water</h2>
+				<h3 class="product1__price">1.00</h3>
+			</div>
+			<div class="product1">
+				<img class="product1__image" src="img/products/smoothie.svg" alt="Smoothie">
+				<h2 class="product1__name">Smoothie</h2>
+				<h3 class="product1__price">6.00</h3>
+			</div>
+		</section>
+	</main>
+
+	<!--========== FOOTER ==========-->
+	<footer class="footer">
+		<div class="contactfooter">
+			<div class="footer_content">
+				<h2 class="footer__title">Contact</h2>
+				<ul class="adress">
+					<h1 id="1">&#9743; 777-888-999</h1>
+					<br>
+					<h1 id="2">  &#127911; &#128590; Ms. Anna</h1>
+					<br>
+					<h1 id="3">&#128666;  999 - 888 - 777</h1>
+					<br>
+					<h1 id="4">&#128231; group3@email.com</h1>
+					<br>
+				</ul>
+			</div>
+			<div class="footer_content">
+				<p class="footer__copy">&#169; 2021 Group3. All right reserved</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script src="main.js"></script>
+</body>
+
+</html>
