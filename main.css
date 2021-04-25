@@ -34,6 +34,7 @@
     color: var(--color-black);
     font-family: var(--base-font-family);
     background-image: url("./img/products/456.jpg");
+    
   }
   /*------Bieu_tuong----------*/
   .icon{
@@ -57,7 +58,7 @@
     grid-template-columns: 1fr 3fr;
     margin: 0 auto;
     padding: 0 var(--base-padding);
-    grid-row-gap: 150px;
+    grid-row-gap: 300px;
   }
   
   @media screen and (min-width: 600px) {
@@ -318,6 +319,7 @@
     background-color: #4CAF50;
   }
  /*------------------MENU-----------------------*/
+
  section#menu.menu
  {
    padding: 60px 10px;
@@ -341,6 +343,9 @@
   max-width: 200px;
 }
  /*----------------------FOOTER-------------------------*/
+ footer.footer{
+  padding: 200px 100px 10px 100px;
+}
  .footer{
   text-align: center;
  }
